@@ -1,4 +1,4 @@
-package HomeWork
+package Practice
 
 fun main(){
     var favNum =72
