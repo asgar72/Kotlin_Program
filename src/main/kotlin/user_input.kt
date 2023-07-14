@@ -1,4 +1,5 @@
 fun main() {
     val userInput = readLine()
-    println("You entered $userInput")
+    if (userInput != null)
+        println(userInput.toInt()-5)
 }
