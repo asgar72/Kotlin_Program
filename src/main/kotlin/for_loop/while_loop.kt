@@ -1,3 +1,5 @@
+package for_loop
+
 fun main() {
     val myArr = arrayOf("Hello", "Java", "Hii", "Kotlin")
     val arrayLen = myArr.size
