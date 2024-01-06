@@ -1,9 +1,4 @@
 fun main() {
-    println("Hello World")
-    print(3 + 10)
-    println("\nI am learning Kotlin.")
-    println("It is awesome!")
-
     println("Hello World!")
     var myAge: Byte = 22
     println(myAge)
