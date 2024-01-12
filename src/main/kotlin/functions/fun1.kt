@@ -1,8 +1,13 @@
 package functions
 
+data class CoffeeDetails(
+    val sugarCount: Int,
+    val name: String,
+    val size: String,
+    val creamAmount: Int
+)
 fun main() {
-    
-    askCoffeeDetails()
+    val coffeeForDenis = CoffeeDetails(0,"Denis","xxl",0)
 }
 
 fun askCoffeeDetails() {
@@ -11,16 +16,16 @@ fun askCoffeeDetails() {
     println("How many pieces of sugar do you want?")
     val sugarCount = readln().toInt()
     //call functions
-    makeCoffee(sugarCount, name)
+//    makeCoffee(sugarCount, name)
 }
 
 //define functions and use multiple parameter
-fun makeCoffee(sugarCount: Int, name: String) {
-    if (sugarCount == 1) {
-        println("Coffee with $sugarCount spoon of sugar and this coffee for $name .")
-    } else if (sugarCount == 0) {
-        println("Coffee with No sugar and this coffee for $name .")
+fun makeCoffee(coffeeDetails: CoffeeDetails) {
+    if (coffeeDetails.sugarCount == 1) {
+        println("Coffee with ${coffeeDetails.sugarCount} spoon of sugar and this coffee for ${coffeeDetails.name} .")
+    } else if (coffeeDetails.sugarCount == 0) {
+        println("Coffee with No sugar and this coffee for ${coffeeDetails.name} .")
     } else {
-        println("Coffee with $sugarCount spoon of sugar and this coffee for $name .")
+        println("Coffee with ${coffeeDetails.sugarCount} spoon of sugar and this coffee for ${coffeeDetails.name} .")
     }
 }
