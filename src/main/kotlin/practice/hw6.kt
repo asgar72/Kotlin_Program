@@ -1,4 +1,4 @@
-package Practice
+package practice
 
 fun main() {
     val myStr = "racecar"

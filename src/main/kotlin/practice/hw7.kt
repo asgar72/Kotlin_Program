@@ -1,4 +1,4 @@
-package Practice
+package practice
 
 fun main() {
     println("please enter a number")
