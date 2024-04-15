@@ -9,6 +9,6 @@ fun main(){
         abbasBankAccount.withdraw(3232.20)
 
         abbasBankAccount.displayTransactionHistory()
-    println("${abbasBankAccount.accountHolder}'s " +
+         println("${abbasBankAccount.accountHolder}'s " +
             "balance is $${abbasBankAccount.balance}")
 }
